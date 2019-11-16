@@ -1,7 +1,17 @@
 package com.com.example.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Country {
+    @Id
+    @Column
 	 private int id;
+    @Column
 	 private String name;
 	 
 	 public int getId() {
